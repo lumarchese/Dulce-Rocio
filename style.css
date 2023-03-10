@@ -54,7 +54,7 @@ nav .nav-link:hover {
 }
 
 #home h1 {
-    font-size: 48px;
+    font-size: 4rem !important;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -63,39 +63,61 @@ nav .nav-link:hover {
     animation: fadeInUp 2s ease;
 }
 
+@media (max-width: 767px) {
+    #home h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: #FF66A3;
+        margin-bottom: 20px;
+        animation: fadeInUp 2s ease;
+    }
+}
+
+
 #home p {
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 1.5;
     color: white;
     animation: fadeInUp 2s ease;
+}
+
+@media (max-width: 767px) {
+    #home p {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: white;
+        animation: fadeInUp 2s ease;
+    }
 }
 
 /* Estilos para la sección de productos */
 #productos {
     padding: 50px 0;
     background-color: #fff;
-  }
-  
-  #productos h2 {
+}
+
+#productos h2 {
     text-align: center;
     margin-bottom: 30px;
-  }
-  
-  #productos p {
+}
+
+#productos p {
     text-align: center;
     margin-bottom: 50px;
-  }
-  
-  #productos ul {
+}
+
+#productos ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  #productos li {
+}
+
+#productos li {
     width: 250px;
     margin: 20px;
     text-align: center;
@@ -104,14 +126,14 @@ nav .nav-link:hover {
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
-  }
-  
-  #productos li:hover {
+}
+
+#productos li:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  #productos li:before {
+}
+
+#productos li:before {
     content: "\f0f2";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -119,19 +141,24 @@ nav .nav-link:hover {
     color: #FFC8DD;
     margin-bottom: 10px;
     display: block;
-  }
-  
-  #productos li:nth-child(2n):before {
+}
+
+#productos li:nth-child(2n):before {
     content: "\f579";
-  }
-  
-  #productos li:nth-child(3n):before {
+}
+
+#productos li:nth-child(3n):before {
     content: "\f1fe";
-  }
-  
-  #productos li:nth-child(4n):before {
+}
+
+#productos li:nth-child(4n):before {
     content: "\f0e7";
-  }
+}
+
+.img-card{
+    border-radius: 10px;
+}
+
 /* Estilos para la sección de servicios */
 #servicios {
     background-color: #FFC8DD;
@@ -147,6 +174,7 @@ nav .nav-link:hover {
     margin-bottom: 20px;
     color: #333;
     animation: fadeInUp 1s ease;
+    margin: auto;
 }
 
 #servicios p {
@@ -156,6 +184,8 @@ nav .nav-link:hover {
     color: #333;
     margin-bottom: 50px;
     animation: fadeInUp 1.5s ease;
+    margin: auto;
+    margin-bottom: 1.4em;
 }
 
 #servicios ul {
@@ -167,10 +197,23 @@ nav .nav-link:hover {
     margin: 0 20px;
     text-align: center;
     animation: fadeInUp 2s ease;
+    margin: auto;
 }
-.seguinos{
+
+@media (max-width: 767px) {
+    #servicios li {
+        margin: 0 20px;
+        text-align: center;
+        animation: fadeInUp 2s ease;
+        margin: auto;
+        margin-left: 4em;
+    }
+}
+
+.seguinos {
     text-align: center;
 }
+
 /* Estilos para el pie de página */
 footer {
     background-color: #333;
@@ -268,6 +311,8 @@ footer a:hover {
     margin-right: 20px;
     font-size: 24px;
     transition: transform 0.3s ease;
+    margin: auto;
+    padding-top: 20px;
 }
 
 .redes-sociales li a {
@@ -301,7 +346,7 @@ header {
     align-items: center;
     background-color: #fff;
     padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
     position: fixed;
     top: 0;
     left: 0;
@@ -355,9 +400,9 @@ nav a:hover {
     border-radius: 50%;
     margin: 10px;
 }
+
 @media (max-width: 767px) {
     .logo {
-      width: 70%;
+        width: 70%;
     }
-  }
-  
+}
